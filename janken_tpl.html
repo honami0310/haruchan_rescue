@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>じゃんけん</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>じゃんけん</h1>
+
+</header>
+
+<main>
+  <div><ul class="btn">
+    <input type="button" value="グー" onclick="choose(0)">
+    <input type="button" value="チョキ" onclick="choose(1)">
+    <input type="button" value="パー" onclick="choose(2)">
+  </ul>
+  </div>
+  <div>あなたの出した手は？「<span id="me_hands">なに？</span>」</div>
+  <div>コンピュータの出した手は？「<span id="pc_hands">なに？</span>」</div>
+  <div id="judgment">勝ち</div>
+</main>
+
+<footer></footer>
+<script>
+//じゃんけん用のSCRIPTを書いてください
+    
+//pcの手を出す！自分がどれか手を出すとpcのランダムが回るようにした。
+   
+  let choice = ['グー','チョキ','パー',];
+  let enemy; 
+
+
+  function choose(me_btn){
+    enemy = Math.floor( Math.random() * 3);
+
+
+    if ( me_btn === enemy ){ 
+        judgment_text="あいこです";}
+    else if( me_btn === 0 && enemy===1 ){
+        judgment_text="あなたの勝ち";}
+    else if( me_btn === 1 && enemy===3 ){
+        judgment_text="あなたの勝ち";}
+    else if( me_btn === 2 && enemy===0 ){
+        judgment_text="あなたの勝ち";}
+    else {judgment_text="あなたの負け";}
+    
+    // document.getElementById("pc_hands").innerHTML = choice[enemy];
+    $("#pc_hands").html(choice[enemy]);
+    console.log(choice);
+    $("#me_hands").html(choice[me_btn]);
+    $("#judgment").html(judgment_text);
+    
+      };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+html { font-size: 62.5%; }
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    background-color: #363b02;
+}
+header{
+    margin: 50px;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    background-color: #363b02;
+    color: #D2691E;
+}
+main{
+    border-bottom:1px solid #000000;    
+}
+
+.explain{   
+    text-align: center;
+    font-size: 3.0rem; 
+    list-style: none;
+    color: white;
+    @font-face {
+        font-family: "myfont";
+        src: url("misaki_gothic.ttf") format("truetype");
+      }
+}
+#haru{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    }
+#finalresult{
+    text-align: center;
+    font-size: 3.0rem;
+    color: white;
+    } 
+.btn{
+    text-align: center;
+    font-size: 3.0rem;
+        padding: 0;
+        border-top: 1px solid #000000;
+        /* display:table;  定義 */
+        height: 100 px;
+    }
+.space50px{height: 50px;}
+#vs{display: flex;
+     
+    gap: 30px 20px;
+    justify-content: center;
+    }
+.vs2{width: 600px;
+    font-size: 3.0rem;
+    border: #000000;
+    color: white;
+    text-align: right;
+    margin-right: 60px;
+    }
+.vs3{width: 600px;
+        font-size: 3.0rem;
+        border: #000000;
+        color: white;
+        margin-left: 60px;
+        }
+#me{
+    display: flex;
+    margin-left: auto; 
+    justify-content: right;  
+    }
+#my_hand{width: 150px;
+    }
+#cat{
+    display: flex;
+    gap: 30px 20px;
+    }
+    #cat_hand{width: 150px;}
+#finalresult{ display: none }
+
+footer{
+    background-color: #000000;
+    border-bottom:1px solid #   ;
+    text-align: center;
+}
+/* p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fffn;
+    height:200px;
+} */
+/* li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    /* cursor: pointer;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+} */ 
